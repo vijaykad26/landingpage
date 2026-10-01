@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="booking-page">
+<nav class="navbar">
+    <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="Destinations.html">Destinations</a></li>
+         <li><a href="signup.html">Sign Up</a></li>
+         <li><a href="login.html">Login</a></li>
+         <li><a href="Contact Us.html"> Contact Us</a></li>
+    </ul>
+</nav>
+    <div class="booking-container">
+        <h2 >Book Your Trip</h2>
+        <p>Welcome to the booking page!</p>
+    
+    <section class="booking">
+
+    <h2>Book Your Trip</h2>    
+    <h2>Welcome, <span id="usernameDisplay"></span>!</h2>
+    <p>Select your travel package below:</p>
+    <div class="cards">
+        <div class="card1">
+            <h3>Package 1</h3>
+            <p>Beach Paradise to varkala beach for a relaxing vacation.</p>
+            <h2>Price: ₹2,200 per person for 5 days non AC bus and non AC room</h2>
+            <h2>Price: ₹3,200 per person for 5 days AC bus and AC room</h2>
+    </div>
+        </div>
+        <div class="card2">
+            <h3>Package 2</h3>
+            <p>Mountain Adventure to Munnar for an adventurous trek.</p>
+            <h2>Price: ₹10,000 per person for 5 days non AC bus and non AC room</h2>
+            <h2>Price: ₹15,000 per person for 5 days AC bus and AC room</h2>
+    </div>
+            
+        </div>
+        <div class="card3">
+            <h3>Package 3</h3>
+            <p>Explore the cities of covai for a cultural immersion experience.</p>
+            <h2>Price: ₹8,000 per person for 5 days non AC bus and non AC room</h2>
+            <h2>Price: ₹12,000 per person for 5 days AC bus and AC room</h2>
+            </div>
+    <div class="card4">
+        <h3>Destinations 1</h3>
+        <p>Choose from a variety of destinations for your next adventure.</p>
+        <p><strong> Kerala to Goa</strong></p><br>
+<p>Enjoy a relaxing beach vacation with our all-inclusive package.</p><br>
+<p>Kerala :<br>
+Departure time: 8:00 PM<br>
+Arrival time: 6:00 AM</p>
+<P>Goa:<br>
+Departure time: 8:00 PM<br>
+Arrival time: 6:00 AM</p>
+<h2><p>Price: ₹2,000 per person for  non AC bus</p>
+<p>Price: ₹2,500 per person for  AC bus </p></h2>
+    </div>
+</div>
+<div class="card5">
+        <h3>Destinations 2</h3>
+        <p>Choose from a variety of destinations for your next adventure.</p>
+        <p><strong> Kerala to Kanyakumari</strong></p><br>
+<p>Experience the beauty of South India with our scenic route.</p><br>
+<p>Kerala :<br>
+Departure time: 8:00 PM<br>
+Arrival time: 6:00 AM</p>
+<P>Kanyakumari:<br>
+Departure time: 8:00 PM<br>
+Arrival time: 6:00 AM</p>
+<h2><p>Price: ₹500 per person for  non AC bus</p>
+<p>Price: ₹1000 per person for  AC bus </p></h2>>
+    </div>
+</div>
+<div class="card6">
+        <h3>Destinations 3</h3>
+        <p>Choose from a variety of destinations for your next adventure.</p>
+        <p><strong> Kerala to Chennai</strong></p><br>
+<p>Explore the vibrant city of Chennai with our cultural tour.</p><br>
+<p>Kerala :<br>
+Departure time: 8:00 PM<br>
+Arrival time: 6:00 AM</p>
+<P>Chennai:<br>
+Departure time: 8:00 PM<br>
+Arrival time: 6:00 AM</p>
+<h2><p>Price: ₹1,500 per person for  non AC bus</p>
+<p>Price: ₹2,000 per person for  AC bus </p></h2>
+    </div>
+    </section>
+    </div>
+<div  class="booking">
+    <form action="payment.html" method="get">
+        <label><strong>Passenger Name:</strong></label>
+        <input type="text" id="passenger name" name="passenger name" required><br><br>
+        <label><strong>Phone Number:</strong></label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        <label><strong>Travel Date:</strong></label>
+        <input type="date" id="traveldate" name="traveldate" required><br><br>
+        <label><strong>Nmber of passengers:</strong></label>
+        <input type="number" id="numpassengers" name="numpassengers" min="1" required><br><br>
+
+    </form>
+    <label><strong>Seats:</strong></label>
+    <select name="seats" required>
+    <option value="">Select Seats</option>
+    <option value="1">1 Seat</option>
+    <option value="2">2 Seats</option>
+    <option value="3">3 Seats</option>
+    <option value="4">4 Seats</option>
+    <option value="5">5 Seats</option>
+    </select>
+    <br><br> 
+    <label><strong>Travel Class:</strong></label>
+    <select  name="travelClass" required>
+        <option value="">Select Class</option>
+        <option value="nonAC">Non AC</option>
+        <option value="AC">AC</option>
+    </select><br><br>
+    <label><strong>Package:</strong></label>
+    <select name="package" required>
+    <option value="">Select a package</option>
+    <option value="package">no package</option>
+    <option value="package1">Beach Paradise</option>
+    <option value="package2">Mountain Adventure</option>
+    <option value="package3">Covai Explorer</option>
+    </select>
+    <br><br>
+    <label><strong>Destination:</strong></label>
+    <select name="destination" required>
+    <option value="">Select a destination</option>
+    <option value="destination1">Kerala to Goa</option>
+    <option value="destination2">Kerala to Kanyakumari</option>
+    <option value="destination3">Kerala to Chennai</option>
+    </select>
+    <br><br>
+       <a href="payment.html"> <button type="submit">Proceed to payment</button></a>
+    </form>
+    
+</div>
+</body>
+</html>

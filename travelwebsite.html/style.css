@@ -1,0 +1,425 @@
+body{
+    background-color:powderblue;
+    background-size: 66vh;
+    background-repeat: no-repeat;
+    background-position: 0px 250px;
+    margin: 0px;
+    
+}
+.container{ 
+    background-color: rgba(218, 165, 32, 0.598);
+    text-align: center;
+    padding:1px;
+}
+.container h1{
+    color:aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    
+}
+.navbar li {
+    float: left;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px 30px;
+    text-align: center;
+   
+}
+.navbar a:hover{
+    background-color: hsl(0, 0%, 35%);
+}
+.package1 img{
+    display: block;
+    margin: auto;
+}
+.package1{
+    animation-name: shrink;
+    animation-duration: 3s;
+    animation-delay: 100ms;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+}
+@keyframes slideleft{
+    50%{
+        transform: translateX(100px);
+    }
+}
+@keyframes slideright{
+    50%{
+        transform: translateX(500px);
+    }
+}
+@keyframes slideup{
+    50%{
+        transform: translatey(-500px);
+    }
+}
+@keyframes slidedown{
+    50%{
+        transform: translatey(500px);
+    }
+}
+@keyframes grow{
+    50%{
+        transform: scale(1.5, 1.5);
+    }
+}
+@keyframes shrink{
+    50% {
+        transform: scale(0.5, 0.5);
+    }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+p{
+    font-size: 150%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    
+}
+.packages{
+    background-color: #11bcc9e0;
+    padding: 20px;
+    text-align: center;
+    margin: 0px;
+}
+.package-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.package-list .package1{
+    background-color: #351d8ce0;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+    float: left;
+}
+.package-list .package2{
+    background-color: #c58a25e0;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+    float: left;
+}
+.package img{
+    display: block;
+    margin: auto;
+}
+.package2{
+    animation-name: grow;
+    animation-duration: 3s;
+    animation-delay: 100ms;
+    animation-iteration-count: infinite;
+}
+.package-list .package3{
+    background-color: #ed0791e0;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+    float: left;
+}
+.package img{
+    display: block;
+    margin: auto;
+}
+.package3{
+    animation-name: shrink;
+    animation-duration: 3s;
+    animation-delay: 100ms;
+    animation-iteration-count: infinite;
+}
+.destination1{
+    
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+     background-image:linear-gradient(rgb(13, 93, 222),rgb(46, 175, 245));
+    display: block;
+    margin: auto;
+    animation-name: slideright;
+    animation-duration: 3s;
+    animation-delay: 10ms;
+}
+.destinations-list{
+  background-color:powderblue;
+    text-align: center;
+    padding: 20px;
+}
+.destination2{
+     background-color:rgb(184, 176, 230);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+    float: left;
+      display: block;
+  margin: auto;
+    animation-name: slideup;
+    animation-duration: 3s;
+    animation-delay: 10ms;
+}
+
+
+.destination-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.destination3{
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+    float: left;
+
+     background-color: rgb(231, 27, 156);
+    display: block;
+    margin: auto;
+    animation-name: slideleft;
+    animation-duration: 3s;
+    animation-delay: 10ms;
+}
+.About {
+    font-size: 150%;
+    text-align: center;
+    color: rgb(66, 15, 234);
+}
+.signup-container h2{
+    margin-top: 0px;
+background-color: brown;
+}
+.login-container h2{
+margin-top: 0px;
+    background-color: #91300c;
+}
+
+.payment-success-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: powderblue;
+}
+.payment-success {
+    background: white;
+    width: 450px;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.payment-success h1 {
+    color: #111;
+}
+.payment-success h2 {
+    color: green;
+    font-size: 30px;
+}
+.payment-success h3 {
+    font-size: 22px;
+}
+.success-icon {
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    background: green;
+    color: white;
+    border-radius: 50%;
+    font-size: 55px;
+    line-height: 80px;
+}
+.home-button {
+    display: inline-block;
+    background: red;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 25px;
+}
+
+.home-button:hover {
+    background: black;
+}
+.receipt {
+    width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    border: 2px solid #111;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.receipt h1 {
+    color: red;
+}
+.receipt p {
+    font-size: 18px;
+    text-align: left;
+    margin: 15px;
+}
+.contact {
+    width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgb(225, 10, 10);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.contact h1 {
+    color: red;
+}
+.contact h2 {
+    font-size: 30px;
+}
+.contactr textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.contact button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    background: rgb(89, 0, 255);
+    color: rgb(248, 247, 252);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact a {
+    color: rgb(213, 213, 213);
+    text-decoration: none;
+}
+.login-container {
+    width: 710px;
+    padding: 25px;
+    position: absolute;
+    top: 262px;
+    right: 0px;
+    background-color: white;
+    border-radius: 0px;
+    animation: fadeInUp 1.5s ease-in;
+    text-align: center;
+    z-index: 1000;
+}
+
+.login-container1{
+    width: 48%;
+    padding: 100px;
+    position: absolute;
+    top: 150px;
+    right: 250px;
+    background-color: rgb(248, 248, 250);
+    border-radius: 0px;
+    animation: fadeInUp 1.5s ease-in;
+    text-align: center;
+    z-index: 1000;
+
+}
+.login-container1 h2{
+margin-top: 0px;
+    background-color: #91300c;
+}
+.login-container1-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #cf4e0d;
+    color: blue ;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.login-btn:hover{
+    background-color: #91300c;
+}
+
+.login-btn1{
+    background-color: crimson;
+    cursor: pointer;
+    padding: 10px 5px;
+    font-size: large;
+}
+.login-btn1:hover{
+    background-color:powderblue;
+}
+.login-btn{
+    background-color:orange;
+}
+.signup-container {
+    width: 710px;
+    padding: 25px;
+    position: absolute;
+    top: 150px;
+    right: 25%;
+    background-color: rgb(229, 193, 13);
+    border-radius: 0px;
+    animation: fadeInUp 1.5s ease-in;
+    text-align: center;
+    z-index: 1000;
+}
+
+.signup-container h2 {
+    margin-top: 0px;
+    background-color: #91300c;
+    color: white;
+    padding: 10px;
+}
+
+.signup-btn {
+    padding: 10px 20px;
+    background-color: #cf4e0d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.signup-btn:hover {
+    background-color: #91300c;
+}
+.qoutes{
+    text-align: bottom;
+    color:#91300c;
+}

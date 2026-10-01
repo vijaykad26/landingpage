@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debit card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="payment-container">
+
+    <h1>🚌 KOMBAN TRAVELS</h1>
+
+    <h2>Debit Card Payment</h2>
+
+    <p>Enter your debit card details</p>
+
+
+    <form action="payment-completed.html">
+
+        <label><strong>Card Holder Name</strong></label>
+
+        <input type="text" placeholder="Enter card holder name"  required><br><br>
+
+
+        <label><strong>Debit Card Number</strong></label>
+
+        <input type="text" placeholder="Enter debit card number" maxlength="12"  required><br><br>
+        <label><strong>Expiry Date</strong></label>
+        <input type="month" required><br><br>
+        <label><strong>CVV</strong></label>
+        <input type="password" placeholder="Enter CVV" maxlength="4" required><br><br>
+        <label><strong>Amount</strong></label>
+        <input type="text" value="₹2,000"><br><br>
+        <button type="submit">
+            Pay ₹2,000
+        </button>
+
+    </form>
+
+
+    <br>
+
+    <a href="payment.html">
+        <button type="submit">Back to Payment</button>
+    </a>
+
+</div>
+
+
+</body>
+</html>
